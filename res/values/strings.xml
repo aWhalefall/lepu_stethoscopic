@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用文字资源 -->
+    <string name="app_name">LeHear 100</string>
+    <string name="app_tip">提示</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_ok">确定</string>
+    <string name="app_back_title">返回</string>
+
+    <string name="main_title">智能听诊器</string>
+
+    <string name="app_quit">退出</string>
+    <string name="app_quit_message">您确定退出智能听诊器吗?</string>
+    <string name="lib_test">测试</string>
+    <string name="lib_buffer_loading">正在加载</string>
+    <string name="lib_check_network">请先检查网络</string>
+
+    <!-- pull_to_refresh -->
+    <string name="pull_to_refresh_pull_label">轻轻下拉,刷新</string>
+    <string name="pull_to_refresh_release_label">该放手,我要刷新啦</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="lib_google_listview_loadmore">加载中</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="medication">我的用药</string>
+    <string name="datarecoder">数据记录</string>
+    <string name="settting">设置</string>
+    <string name="personinfo">个人资料</string>
+    <string name="cancel">取消</string>
+    <string name="exit_account">退出当前账号</string>
+    <string name="login_success">登录成功</string>
+    <string name="exit_on_key_down_more">再按一次退出程序</string>
+    <string name="personsetting">个人设置</string>
+    <string name="personfavorite">我的收藏</string>
+    <string name="personcenter">个人中心</string>
+    <string name="aboutus">关于我们</string>
+
+    <string name="login">登录</string>
+    <string name="forgetPwd">忘记密码</string>
+    <string name="login_title">用户登录</string>
+
+    <string name="medication_title">我的用药</string>
+    <string name="signIn_title">用户注册</string>
+    <string name="protection_title">密保注册</string>
+    <string name="perfect_info">完善资料</string>
+    <string name="next">下一步</string>
+    <string name="signin">注册</string>
+    <string name="phone_please">请输入手机号码</string>
+    <string name="pwd_please">请输入密码</string>
+    <string name="checkCode_please">请输入验证码</string>
+    <string name="weight_and_height_please">请选择身高体重</string>
+
+
+    <string name="findByPhone">手机找回</string>
+    <string name="findByPwd">密码找回</string>
+    <string name="ArtificialService">人工帮助</string>
+    <string name="register_phone">注册所用的手机</string>
+    <string name="new_pwd">新密码</string>
+    <string name="new_pwd_confirm">确认新密码</string>
+    <string name="confirm">确认</string>
+    <!-- check tip -->
+    <string name="send_checkCode_success">发送验证码成功</string>
+    <string name="send_checkCode_failure">发送验证码失败</string>
+    <string name="phone_cannot_null">请输入您的手机号码</string>
+    <string name="phone_must_11">请输入11位手机号码</string>
+    <string name="pwd_must_6">请输入6位以上密码</string>
+    <string name="pwd_cannot_null">密码不能为空</string>
+    <string name="pwd_not_same">密码不一致</string>
+    <string name="answer_please">请填写问题答案</string>
+    <string name="checkword_cannot_null">验证码不能为空</string>
+    <string name="is_not_phone_number">不是手机号码</string>
+    <string name="password_not_fit_law">密码不符合规范</string>
+    <string name="name_can_not_null">请输入您的姓名</string>
+    <string name="birthday_please">请选择生日</string>
+    <string name="jot_title_can_not_null">请选择技术职称</string>
+    <string name="department_can_not_null">请选择医院和科室</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="copyright_declare">版权声明</string>
+    <string name="check_version">检查版本</string>
+    <string name="versioninfo">版本信息</string>
+
+
+    <string name="check_network">检查网络</string>
+    <string name="ok">确定</string>
+    <string name="tab_test">LeHear 100</string>
+    <string name="test">测量</string>
+    <string name="tab_data">数据</string>
+    <string name="tab_my">我</string>
+    <string name="mine">我</string>
+    <string name="app_data">数据</string>
+
+    <string name="record">录音</string>
+    <string name="rename">重命名</string>
+    <string name="isconfirm">是否确认删除该录音文件？</string>
+    <string name="main_top_tips">主动脉瓣第二听诊区</string>
+    <string name="mai">脉前线</string>
+    <string name="register">注册</string>
+    <string name="success">成功</string>
+    <string name="notify">修改</string>
+    <string name="isexittips">您否确定退出应用程序？</string>
+    <string name="updatasuccess">上传成功</string>
+    <string name="connectfail">链接超时，请检查网络</string>
+    <string name="recordend">录音已经完成</string>
+    <string name="filereaderror">文件读取异常</string>
+    <string name="replacesend">重发验证码</string>
+    <string name="notifyname">修改名字不能为空</string>
+
+</resources>

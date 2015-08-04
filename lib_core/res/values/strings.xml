@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lib_test">测试</string>
+    <string name="lib_buffer_loading">正在加载</string>
+    <string name="lib_check_network">请先检查网络</string>
+
+    <!-- pull_to_refresh -->
+    <string name="pull_to_refresh_pull_label">轻轻下拉,刷新</string>
+    <string name="pull_to_refresh_release_label">该放手,我要刷新啦</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    
+    <string name="lib_google_listview_loadmore">加载中</string>
+
+</resources>

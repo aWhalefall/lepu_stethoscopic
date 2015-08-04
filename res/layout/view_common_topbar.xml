@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topbar_height"
+    android:background="@drawable/topbar_bg">
+
+    <LinearLayout
+        android:id="@+id/topbarLeftLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/topbarLeftBackImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_icon"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/topbarLeftBackTitle"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="@string/app_back_title"
+            android:textColor="@drawable/back_title_text_selector"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/topbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:lines="1"
+        android:singleLine="true"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_big" />
+
+    <TextView
+        android:id="@+id/textview_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_big"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textview_pictext"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:layout_width="wrap_content"
+        android:text="记录"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/fontcolor44"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_big"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>

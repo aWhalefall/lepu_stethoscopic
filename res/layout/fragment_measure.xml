@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/group1"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.lepu.stethoscopic.widget.CommonTopBar
+            android:id="@+id/commonbatr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_below="@id/commonbatr"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/textview_top"
+                android:layout_width="wrap_content"
+                android:background="@drawable/home_icon"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/textview_heart"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/heartvoice"
+                android:layout_width="@dimen/heartsize"
+                android:layout_height="@dimen/heartsize" />
+
+            <TextView
+                android:text="@string/main_top_tips"
+                android:textSize="@dimen/big_text_size"
+                android:layout_width="wrap_content"
+                android:textColor="#EC6877"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/imgview_startrecorder"
+                android:src="@drawable/lungsvoice"
+                android:layout_width="@dimen/heartsize"
+                android:layout_height="@dimen/heartsize"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:text="@string/mai"
+                android:textSize="@dimen/big_text_size"
+                android:id="@+id/textview_title"
+                android:layout_width="wrap_content"
+                android:textColor="@color/blue"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+            <!--android:background="@drawable/lungs"-->
+
+        </LinearLayout>
+    </RelativeLayout>
+    <!--<RelativeLayout-->
+    <!--android:layout_marginTop="100dp"-->
+    <!--android:id="@+id/title"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="40dip"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:background="#008BED">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="18sp"-->
+    <!--android:text="音频文件列表" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/record"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="15dip"-->
+    <!--android:padding="5dip"-->
+    <!--android:background="#61b2f0"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:text="录音" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<com.lepu.stethoscopic.fun.functiion.recorder.MusicEnergy-->
+    <!--android:id="@+id/music_energy"-->
+    <!--android:layout_below="@id/title"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="100dip" />-->
+
+    <!--<ListView-->
+    <!--android:id="@+id/listview"-->
+    <!--android:layout_below="@id/music_energy"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:divider="#00000000"-->
+    <!--android:dividerHeight="10dip"-->
+    <!--android:fadingEdge="none"-->
+    <!--android:padding="15dp"-->
+    <!--android:scrollbars="none"-->
+    <!--android:scrollingCache="false"></ListView>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/empty"-->
+    <!--android:layout_below="@id/title"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="40dip"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="12sp"-->
+    <!--android:text="无音频文件" />-->
+</LinearLayout>

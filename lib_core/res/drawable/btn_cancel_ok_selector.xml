@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <item android:state_pressed="true">
+        <shape>
+           <solid android:color="@color/lib_color_btn_cancel_ok_selected"/>
+            <corners android:bottomLeftRadius="@dimen/lib_corner_big" 
+                android:bottomRightRadius="@dimen/lib_corner_big"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="@color/lib_color_btn_cancel_ok_selected"/>
+            <corners android:bottomLeftRadius="@dimen/lib_corner_big" 
+                android:bottomRightRadius="@dimen/lib_corner_big"/>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="@color/lib_color_btn_cancel_ok_selected"/>
+            <corners android:bottomLeftRadius="@dimen/lib_corner_big" 
+                android:bottomRightRadius="@dimen/lib_corner_big"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/lib_color_btn_cancel_ok_default"/>
+           <corners android:bottomLeftRadius="@dimen/lib_corner_big" 
+                android:bottomRightRadius="@dimen/lib_corner_big"/>
+        </shape>
+    </item>
+
+</selector>

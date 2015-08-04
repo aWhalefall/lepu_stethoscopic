@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/itemselector"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <RelativeLayout
+            android:id="@+id/linelayout_left"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relLayout_title"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ic_soundType"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/fileName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ic_soundType"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="data_01"
+                    android:textColor="@color/fontcolor44" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/fileName"
+                    android:layout_gravity="right"
+                    android:id="@+id/createtime"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(2015-04-13 00:00:15)"
+                    android:textSize="13sp"
+                    android:textColor="@color/txt_hint" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/relLayout_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:background="@drawable/update_image"
+                    android:id="@+id/textview_updata"
+                    android:singleLine="true"
+                    android:layout_width="57dp"
+                    android:layout_height="23dp"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:visibility="invisible"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignTop="@+id/textview_delete"
+                    android:text="专家诊断"
+                    android:drawableLeft="@drawable/ic_diagnosis"
+                    android:id="@+id/txt_diagnosis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/txt_diagnosis"
+                    android:layout_gravity="right"
+                    android:id="@+id/textview_delete"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:background="@drawable/delete_image"
+                    android:layout_width="57dp"
+                    android:layout_height="23dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/txt_patient" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/linelayout_left"
+            android:layout_alignParentRight="true"
+            android:layout_width="70dp"
+            android:gravity="center"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/imgview_play"
+                android:layout_width="@dimen/play43"
+                android:src="@drawable/start_play"
+                android:layout_height="@dimen/play43" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

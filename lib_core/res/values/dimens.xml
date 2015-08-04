@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- default -->
+    <dimen name="lib_text_big">20.0dp</dimen><!-- topbar user -->
+    <dimen name="lib_text_medium">18.0dp</dimen><!-- content -->
+    <dimen name="lib_text_small">16.0dp</dimen><!-- smaller -->
+    
+    <dimen name="lib_text_14">14.0dp</dimen>
+    <dimen name="lib_text_13">13.0dp</dimen>
+    <dimen name="lib_text_12">12.0dp</dimen>
+    <dimen name="lib_text_11">11.0dp</dimen>
+    <dimen name="lib_text_10">10.0dp</dimen>
+    
+    <dimen name="lib_corner_big">6dp</dimen>
+    <dimen name="lib_corner_middle">4dp</dimen>
+    <dimen name="lib_corner_small">2dp</dimen>
+    
+    <dimen name="lib_margin_big">8.0dp</dimen>
+    <dimen name="lib_margin_medium">4.0dp</dimen>
+    <dimen name="lib_margin_small">2.0dp</dimen>
+    
+    <dimen name="lib_layout_height">50dp</dimen>
+    <dimen name="lib_progressbar_load_size">30dp</dimen>
+    
+</resources>

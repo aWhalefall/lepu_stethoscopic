@@ -1,0 +1,7 @@
+<resources>
+    <!--rate=1.125-->
+    <dimen name="group2width">247.5dp</dimen>
+    <dimen name="play43">48.375dp</dimen>
+    <dimen name="font250">281.25dp</dimen>
+    <dimen name="heartsize">191.25dp</dimen>
+</resources>

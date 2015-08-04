@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="lib_color_transparent">#00000000</color>
+    <color name="lib_color_half_transparent">#55000000</color>
+    <color name="lib_color_background">#f2f2f2</color>
+
+    <color name="lib_color_textview_black">#676767</color>
+    <color name="lib_color_textview_gray">#cecece</color>
+
+    <color name="lib_color_black">#676767</color>
+    <color name="lib_color_white">#FFFFFF</color>
+    <color name="lib_color_blue">#00B4EA</color>
+
+    <color name="lib_color_progress_bg">#9c9c9c</color>
+    <color name="lib_color_progress">#00B4EA</color>
+
+    <color name="lib_color_broswer_progress_bg">#FFFFFF</color>
+    <color name="lib_color_broswer_progress">#00B4EA</color>
+
+    <color name="lib_color_buffer_bg">#262626</color>
+    <color name="lib_color_toast_bg">#262626</color>
+
+    <color name="lib_color_btn_cancel_ok_default">#FFFFFF</color>
+    <color name="lib_color_btn_cancel_ok_selected">#EEEEEE</color>
+    
+    <color name="lib_color_list_item">#f7f7f7</color>
+    <color name="lib_color_list_item_selected">#e3e3e3</color>
+    <color name="lib_color_listview_divider">#d9d9d9</color>
+    
+</resources>

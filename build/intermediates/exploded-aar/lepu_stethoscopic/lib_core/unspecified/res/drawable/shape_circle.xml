@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+	
+   <solid android:color="@color/lib_color_transparent"/>
+    
+    <!-- 描边 -->
+    <stroke
+        android:width="0.8dp"
+        android:color="@color/lib_color_textview_gray" />
+
+</shape><!-- From: file:/D:/Stethoscope/Stethoscope/lepu_stethoscopic/lib_core/res/drawable/shape_circle.xml -->

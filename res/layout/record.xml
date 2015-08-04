@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:background="#008BED"
+        android:gravity="center"
+        android:text="录音"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+         />
+    
+    <SurfaceView
+        android:id="@+id/music_record"  
+        android:layout_height="100dip" 
+        android:layout_width="fill_parent"
+        android:layout_below="@id/title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" 
+        android:padding="10dip">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="开始录音"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="#008BED"/>
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:padding="5dip"
+            android:text="结束录音"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="#008BED"/>
+    </LinearLayout>
+
+</RelativeLayout>

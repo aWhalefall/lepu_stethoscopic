@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    
+    <string-array name="array_main_test">
+        <item>test1</item>
+        <item>test2</item>
+        <item>test3</item>
+    </string-array>
+    
+    <string-array name="array_bpm_test">
+        <item>test1</item>
+        <item>test2</item>
+        <item>test3</item>
+    </string-array>
+
+    <string-array name="gls_select_test_time_array">
+        <item>凌晨</item>
+        <item>空腹</item>
+        <item>早餐后</item>
+        <item>午餐前</item>
+        <item>午餐后</item>
+        <item>晚餐前</item>
+        <item>晚餐后</item>
+        <item>睡前</item>
+    </string-array>
+
+    <integer-array name="gls_select_test_time_index_array">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </integer-array>
+
+    <string-array name="gls_select_test_tip_array">
+        <item>先去点击动画图片,扫描试纸瓶盖的二维码</item>
+        <item>将普博士手机血糖仪器插入手机的耳机口</item>
+        <item>将试纸条插入普博士手机血糖仪</item>
+        <item>将手指挤出的血滴滴入试纸条吸血口</item>
+    </string-array>
+  
+</resources>

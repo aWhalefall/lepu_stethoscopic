@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topbar_height"
+    android:background="@drawable/topbar_bg"
+     >
+
+    <LinearLayout
+        android:id="@+id/topbarLeftLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/topbar_back_layout_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_big"
+         >
+
+        <ImageView
+            android:id="@+id/topbarLeftBackImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topbar_back_jiantou_selector" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/topbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/color_topbar_title"
+        android:textSize="@dimen/text_big" />
+
+    <ImageButton
+        android:id="@+id/topbarRightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:visibility="gone" />
+
+</RelativeLayout>

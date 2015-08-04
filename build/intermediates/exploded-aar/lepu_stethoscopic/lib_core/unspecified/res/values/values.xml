@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Stethoscope/Stethoscope/lepu_stethoscopic/lib_core/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="lib_color_background">#f2f2f2</color>
+    <color name="lib_color_black">#676767</color>
+    <color name="lib_color_blue">#00B4EA</color>
+    <color name="lib_color_broswer_progress">#00B4EA</color>
+    <color name="lib_color_broswer_progress_bg">#FFFFFF</color>
+    <color name="lib_color_btn_cancel_ok_default">#FFFFFF</color>
+    <color name="lib_color_btn_cancel_ok_selected">#EEEEEE</color>
+    <color name="lib_color_buffer_bg">#262626</color>
+    <color name="lib_color_half_transparent">#55000000</color>
+    <color name="lib_color_list_item">#f7f7f7</color>
+    <color name="lib_color_list_item_selected">#e3e3e3</color>
+    <color name="lib_color_listview_divider">#d9d9d9</color>
+    <color name="lib_color_progress">#00B4EA</color>
+    <color name="lib_color_progress_bg">#9c9c9c</color>
+    <color name="lib_color_textview_black">#676767</color>
+    <color name="lib_color_textview_gray">#cecece</color>
+    <color name="lib_color_toast_bg">#262626</color>
+    <color name="lib_color_transparent">#00000000</color>
+    <color name="lib_color_white">#FFFFFF</color>
+    <declare-styleable name="ProgressWheel"><attr format="string" name="text"/><attr format="color" name="textColor"/><attr format="dimension" name="textSize"/><attr format="color" name="barColor"/><attr format="color" name="rimColor"/><attr format="dimension" name="rimWidth"/><attr format="dimension" name="spinSpeed"/><attr format="integer" name="delayMillis"/><attr format="color" name="circleColor"/><attr format="dimension" name="barWidth"/><attr format="dimension" name="barLength"/></declare-styleable>
+    <!-- From: file:/D:/Stethoscope/Stethoscope/lepu_stethoscopic/lib_core/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="lib_corner_big">6dp</dimen>
+    <dimen name="lib_corner_middle">4dp</dimen>
+    <dimen name="lib_corner_small">2dp</dimen>
+    <dimen name="lib_layout_height">50dp</dimen>
+    <dimen name="lib_margin_big">8.0dp</dimen>
+    <dimen name="lib_margin_medium">4.0dp</dimen>
+    <dimen name="lib_margin_small">2.0dp</dimen>
+    <dimen name="lib_progressbar_load_size">30dp</dimen>
+    <dimen name="lib_text_10">10.0dp</dimen>
+    <dimen name="lib_text_11">11.0dp</dimen>
+    <dimen name="lib_text_12">12.0dp</dimen>
+    <dimen name="lib_text_13">13.0dp</dimen>
+    <dimen name="lib_text_14">14.0dp</dimen>
+    <dimen name="lib_text_big">20.0dp</dimen>
+    <dimen name="lib_text_medium">18.0dp</dimen>
+    <dimen name="lib_text_small">16.0dp</dimen>
+    <!-- From: file:/D:/Stethoscope/Stethoscope/lepu_stethoscopic/lib_core/res/values/integers.xml -->
+    <eat-comment/>
+    <integer name="default_anim_duration">400</integer>
+    <!-- From: file:/D:/Stethoscope/Stethoscope/lepu_stethoscopic/lib_core/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="lib_buffer_loading">正在加载</string>
+    <string name="lib_check_network">请先检查网络</string>
+    <string name="lib_google_listview_loadmore">加载中</string>
+    <string name="lib_test">测试</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_pull_label">轻轻下拉,刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_release_label">该放手,我要刷新啦</string>
+    <!-- From: file:/D:/Stethoscope/Stethoscope/lepu_stethoscopic/lib_core/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Theme.Lib.Animation.No" parent="@style/Theme.Lib.Base">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style mce_bogus="1" name="Theme.Lib.Base" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoDisplay">false</item>
+    </style>
+    <style name="Theme.Lib.BufferDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/lib_color_transparent</item>
+        <item name="android:windowBackground">@color/lib_color_transparent</item>
+    </style>
+    <style name="Theme.Lib.MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/lib_color_transparent</item>
+        <item name="android:windowBackground">@color/lib_color_transparent</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+    <style name="Theme.Lib.Push.Down.Up.Dialog" parent="@style/Theme.Lib.Base">
+        <item name="android:windowEnterAnimation">@anim/lib_push_down_up_in</item>
+        <item name="android:windowExitAnimation">@anim/lib_push_down_up_out</item>
+    </style>
+    <style name="Theme.Lib.Push.Left.Right.Dialog" parent="@style/Theme.Lib.Base">
+        <item name="android:windowEnterAnimation">@anim/lib_push_left_right_in</item>
+        <item name="android:windowExitAnimation">@anim/lib_push_left_right_out</item>
+    </style>
+    <style name="lib_textview_single_style">
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

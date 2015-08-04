@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+
+    <translate
+        android:duration="@integer/default_anim_duration"
+        android:fromYDelta="0.0%p"
+        android:toYDelta="-100.0%p" >
+    </translate>
+
+</set><!-- From: file:/D:/Stethoscope/Stethoscope/lepu_stethoscopic/lib_core/res/anim/lib_push_down_up_in_back.xml -->

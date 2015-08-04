@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/relLayout_title"
+        style="@style/title">
+
+        <include layout="@layout/include_back" />
+
+        <TextView
+            style="@style/txt_title"
+            android:text="@string/perfect_info" />
+
+        <TextView
+            style="@style/txt_title_right"
+            android:text="@string/next" />
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/layout_tip"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:layout_below="@+id/relLayout_title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <TextView
+        android:layout_below="@+id/relLayout_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:text="请选择身高和体重"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_man"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="80dp"-->
+    <!--android:drawableTop="@drawable/ic_launcher"-->
+    <!--android:text="男"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_women"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_below="@+id/txt_man"-->
+    <!--android:layout_marginTop="80dp"-->
+    <!--android:drawableTop="@drawable/ic_launcher"-->
+    <!--android:text="女"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--</RelativeLayout>-->
+
+
+    <TextView
+        android:id="@+id/txtHeight"
+        android:layout_below="@+id/relLayout_title"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="身高：__cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.lepu.stethoscopic.widget.ObservableHorizontalScrollView
+        android:layout_below="@+id/relLayout_title"
+        android:id="@+id/height_scrollview"
+        android:layout_width="262.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/layout_ruler"
+                android:layout_width="1262.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginLeft="-45dip"
+                android:layout_marginRight="130.0dip"
+                android:src="@drawable/userinfo_scroll_weight" />
+            <!--android:layout_marginLeft="130.0dip"-->
+            <!--android:layout_marginRight="130.0dip"-->
+
+        </LinearLayout>
+    </com.lepu.stethoscopic.widget.ObservableHorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imgLine"
+        android:layout_below="@+id/height_scrollview"
+        android:layout_marginTop="-50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/userinfo_red_line_2" />
+
+    <TextView
+        android:id="@+id/txtWeight"
+        android:layout_below="@+id/height_scrollview"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="体重：__kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.lepu.stethoscopic.widget.ObservableHorizontalScrollView
+        android:layout_below="@+id/txtWeight"
+        android:id="@+id/weight_scrollview"
+        android:layout_width="262.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/weight_scrollview_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="1262.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginLeft="-45dip"
+                android:layout_marginRight="130.0dip"
+                android:src="@drawable/userinfo_scroll_weight" />
+            <!--android:layout_marginLeft="130.0dip"-->
+            <!--android:layout_marginRight="130.0dip"-->
+
+        </LinearLayout>
+    </com.lepu.stethoscopic.widget.ObservableHorizontalScrollView>
+
+    <ImageView
+        android:layout_below="@+id/weight_scrollview"
+        android:layout_marginTop="-50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/userinfo_red_line_2" />
+
+</RelativeLayout>

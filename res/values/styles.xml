@@ -1,0 +1,162 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- =============== ui 控件样式 =============================================-->
+
+    <style name="BaseAnimationNoActionBar" mce_bogus="1" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoDisplay">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!-- ============================================================= -->
+    <!-- 程序启动页使用 		全屏-->
+    <style name="AnimationFullScreen" parent="@style/BaseAnimationNoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- 主程主页使用		要做边滑动，边关闭的效果。主页面必须用这个style-->
+    <style name="AnimationNoActionBarTranslcentFalse" parent="@style/BaseAnimationNoActionBar">
+        <item name="android:windowBackground">@color/lib_color_half_transparent</item>
+    </style>
+
+    <!-- 程序其它页面使用 -->
+    <style name="AnimationNoActionBar" parent="@style/BaseAnimationNoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/lib_color_half_transparent</item>
+    </style>
+    <!-- ============================================================= -->
+    <style name="widget_listview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:divider">@color/color_listview_divider</item>
+        <item name="android:dividerHeight">1.0dip</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollingCache">false</item>
+    </style>
+
+    <style name="AppTheme" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <!--<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">-->
+        <!--<style name="AppTheme" parent="android:Theme.Holo.NoActionBar.Fullscreen">-->
+        <!--<style name="AppTheme" parent="Theme.Holo.Light.DarkActionBar">-->
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="title">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/topbar_bg</item>
+    </style>
+
+    <style name="txt_title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/txt_normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:id">@id/txt_title</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="txt_title_right">
+        <item name="android:id">@id/txtview_right</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/back_title_text_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="edit_tip">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="edit_content">
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="edit_style">
+        <item name="android:padding">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">20sp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorHint">@color/txt_hint</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="txt_btn">
+        <item name="android:layout_gravity">center</item>
+
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/app_icon</item>
+        <item name="android:textColor">@color/white</item>
+
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="edit_off_line">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:background">@color/bg_eeee</item>
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="settings_right_arrow">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/pc_right_arrow</item>
+        <!--<item name="android:src">@drawable/mark_arrow_right_black</item>-->
+    </style>
+
+    <style name="settings_right_detail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableLeft">@drawable/ic_launcher</item>
+        <!--<item name="android:background">@drawable/hl_eclipse</item>-->
+        <item name="android:layout_centerInParent">true</item>
+        <!--<item name="android:src">@drawable/mark_arrow_right_black</item>-->
+    </style>
+
+    <style name="setting_image_user">
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+    </style>
+
+    <style name="settings_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--<item name="android:background">@android:color/transparent</item>-->
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/fontcolor44</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/custom_radiobtn</item>
+    </style>
+
+    <item name="txt_title" type="id">忘记密码</item>
+    <item name="txtview_right" type="id">右边</item>
+</resources>

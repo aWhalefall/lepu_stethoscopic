@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lepu.stethoscopic"
+    android:versionCode="1"
+    android:versionName="1.0.0.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!--<meta-data-->
+        <!--android:name="UMENG_APPKEY"-->
+        <!--android:value="553afdb067e58ef2a6004eed"></meta-data>-->
+        <!--<meta-data-->
+        <!--android:name="UMENG_CHANNEL"-->
+        <!--android:value="Market_Default"></meta-data>-->
+
+        <!--<service android:name=".main.service.AppService"></service>-->
+
+
+        <!-- 启动页 -->
+        <activity
+            android:name=".main.activity.AppStartActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/app_icon"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimationFullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 首次进入程序，帮助引导页 -->
+        <activity
+            android:name=".main.activity.AppStartActivityGuide"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimationNoActionBar" />
+        <!-- 主程序页 -->
+        <activity
+            android:name=".main.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimationNoActionBarTranslcentFalse" />
+        <!-- ================================================================ -->
+
+        <activity
+            android:name=".fun.functiion.login.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimationNoActionBar" />
+        <activity
+            android:name=".fun.functiion.login.SignInFinishActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimationNoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--<activity-->
+        <!--android:name=".fun.functiion.login.ForgetPwdActivity"-->
+        <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+        <!--android:launchMode="standard"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/AnimationNoActionBar" />-->
+
+        <activity
+            android:name=".fun.functiion.login.RegisterByProtectionActivity"
+            android:configChanges="keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimationNoActionBar" />
+        <activity
+            android:name=".fun.functiion.recorderData.RecordActivity"
+            android:configChanges="keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimationNoActionBar" />
+
+        <!--<activity-->
+        <!--android:name=".fun.functiion.activity.CommonActivity"-->
+        <!--android:configChanges="keyboardHidden"-->
+        <!--android:launchMode="standard"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/AnimationNoActionBar" />-->
+    </application>
+
+
+</manifest>

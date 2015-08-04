@@ -1,0 +1,52 @@
+<resources>
+
+    <dimen name="test">10.0dp</dimen>
+    
+    <!-- 文字大小，适配屏幕 -->
+    <dimen name="text_big">20.0dp</dimen><!-- topbar -->
+    <dimen name="text_medium">18.0dp</dimen><!-- content -->
+    <dimen name="text_small">16.0dp</dimen><!-- smaller -->
+    
+    <dimen name="text_30">30.0dp</dimen>
+    <dimen name="text_14">14.0dp</dimen>
+    <dimen name="text_13">13.0dp</dimen>
+    <dimen name="text_12">12.0dp</dimen>
+    <dimen name="text_11">11.0dp</dimen>
+    <dimen name="text_10">10.0dp</dimen>
+    
+    <!-- ui控件间距 -->
+    <dimen name="margin_20">20.0dp</dimen>
+    <dimen name="margin_15">15.0dp</dimen>
+    <dimen name="margin_10">10.0dp</dimen>
+    <dimen name="margin_5">5.0dp</dimen>
+    
+    <dimen name="margin_big">8.0dp</dimen>
+    <dimen name="margin_medium">6.0dp</dimen>
+    <dimen name="margin_small">2.0dp</dimen>
+    
+    <dimen name="topbar_height">48.0dp</dimen>
+    <dimen name="menubar_height">50.0dp</dimen>
+    
+    <dimen name="listview_item_height">100.0dp</dimen>
+    <dimen name="listview_divider_height">0.5dp</dimen>
+    
+    <dimen name="layout_height_smaller">30dp</dimen>
+    <dimen name="layout_height_small">40dp</dimen>
+    <dimen name="layout_height_default">50dp</dimen>
+    <dimen name="layout_height_big">65dp</dimen>
+    <dimen name="layout_height_bigger">80dp</dimen>
+    <dimen name="layout_height_10">10dp</dimen>
+
+    <dimen name="viewpager_tab_line_height">1dp</dimen>
+    <dimen name="viewpager_tab_line_height_selected">3dp</dimen>
+
+    <dimen name="layout_line_width">0.5dp</dimen>
+    <dimen name="group2width">220dp</dimen>
+    <dimen name="play43">43dp</dimen>
+    <dimen name="font250">250dp</dimen>
+    <dimen name="heartsize">170dp</dimen>
+    <dimen name="big_text_size">18sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+
+</resources>

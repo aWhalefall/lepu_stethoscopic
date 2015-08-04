@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/bg_color"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.lepu.stethoscopic.widget.CommonTopBar
+            android:id="@+id/commonbatr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layout_choose_title"
+            android:layout_below="@+id/commonbatr"
+            android:background="@color/bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <RadioGroup
+                android:id="@+id/rdiogroup_total"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_weight="2"
+                android:layout_height="50dp">
+
+                <RadioButton
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/layout_left"
+                    android:background="@drawable/data_notundata_selector"
+                    android:layout_width="0dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:layout_marginRight="40dp"
+                    android:id="@+id/layout_right"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:button="@null"
+                    android:background="@drawable/data_updata_selector"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <com.lepu.stethoscopic.widget.UndataViewPager
+            android:id="@+id/viewPager"
+            android:layout_below="@+id/layout_choose_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</FrameLayout>

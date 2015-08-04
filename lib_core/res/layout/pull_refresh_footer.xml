@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lib_color_transparent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:id="@+id/pullLeftLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/pull_to_load_progress"
+            android:layout_width="@dimen/lib_progressbar_load_size"
+            android:layout_height="@dimen/lib_progressbar_load_size"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progressbar_load"
+            android:indeterminateOnly="true"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+             />
+
+        <ImageView
+            android:id="@+id/pull_to_load_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_pulltorefresh_arrow_up"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pull_to_load_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/pullLeftLayout"
+        android:ellipsize="end"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="@string/pull_to_refresh_footer_pull_label"
+        android:textColor="@color/lib_color_textview_black"
+        android:textSize="@dimen/lib_text_medium" />
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color">
+
+    <com.lepu.stethoscopic.widget.CommonTopBar
+        android:id="@+id/commonbatr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<ScrollView-->
+        <!--android:layout_marginTop="48dp"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:id="@+id/ImageView_icon"
+                android:layout_below="@+id/relLayout_title"
+                android:src="@drawable/app_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+
+                android:id="@+id/layout_phone"
+                android:layout_below="@+id/ImageView_icon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/white"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_launcher" />
+
+                <EditText
+                    android:id="@+id/edt_phone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/phone_please"
+                    android:textColorHint="@color/txt_hint"
+                    android:textColor="@color/txt_normal"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_pwd"
+                android:layout_below="@+id/layout_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_launcher" />
+
+                <EditText
+                    android:id="@+id/edt_login_pwd"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/pwd_please"
+                    android:textColorHint="@color/txt_hint"
+                    android:textColor="@color/txt_normal"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutCheckCode"
+                android:layout_below="@+id/layout_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/white"
+                android:layout_marginTop="1dp">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/icon"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_launcher" />
+
+                <EditText
+                    android:id="@+id/edtCheckCode"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/checkCode_please"
+                    android:textColorHint="@color/txt_hint"
+                    android:textColor="@color/txt_normal"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_code"
+                    android:background="@color/blue"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:text="获取验证码"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/checkBox"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/layoutCheckCode"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_normal"
+                android:text="我已经同意：使用条款和保密协议" />
+
+            <Button
+                android:layout_centerVertical="true"
+                android:id="@+id/btn_login"
+                android:text="@string/signin"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/checkBox"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/blueelector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</RelativeLayout>

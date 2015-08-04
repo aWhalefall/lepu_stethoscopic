@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/DialogTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_outer_corner_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/DialogTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/DialogTitleIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription"></ImageView>
+
+                <TextView
+                    android:id="@+id/DialogTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text="test"
+                    android:textColor="@color/lib_color_textview_black"
+                    android:textSize="@dimen/lib_text_medium"
+                    android:visibility="gone"></TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/DialogDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lib_color_listview_divider"
+                android:scaleType="fitXY"></ImageView>
+        </LinearLayout>
+        <!--主页填充头-->
+        <LinearLayout
+            android:id="@+id/lineer_DialogTitleLayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/shape_outer_corner_white"
+            android:orientation="horizontal">
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+
+            <ImageView
+                android:id="@+id/imgview_line1"
+                android:layout_width="1dp"
+                android:background="@color/lib_color_listview_divider"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+
+            <ImageView
+                android:id="@+id/imgview_line2"
+                android:layout_width="1dp"
+                android:background="@color/lib_color_listview_divider"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/DialogContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_outer_corner_white"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <TextView
+                    android:id="@+id/DialogContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/lib_color_textview_black"
+                    android:textSize="@dimen/lib_text_medium"
+                    android:visibility="gone"></TextView>
+            </ScrollView>
+
+            <ListView
+                android:id="@+id/DialogContentList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:visibility="gone"></ListView>
+
+            <com.core.lib.widget.CustomGridView
+                android:id="@+id/DialogContentGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/DialogContentEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_outer_edittext"
+                android:padding="8dp"
+                android:textColor="@color/lib_color_textview_black"
+                android:textColorHint="@color/lib_color_textview_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/lib_text_medium"
+                android:visibility="gone"></EditText>
+
+            <EditText
+                android:id="@+id/DialogContentEditText2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_outer_edittext"
+                android:imeOptions="actionDone"
+                android:padding="8dp"
+                android:textColor="@color/lib_color_textview_black"
+                android:textColorHint="@color/lib_color_textview_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/lib_text_medium"
+                android:visibility="gone"></EditText>
+
+            <TextView
+                android:id="@+id/DialogContentHtml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="TextView"
+                android:textColor="@color/lib_color_textview_black"
+                android:textSize="@dimen/lib_text_medium"
+                android:visibility="gone"></TextView>
+
+            <LinearLayout
+                android:id="@+id/DialogDateTimePicker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lib_color_white"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <com.core.lib.ui.wheel.WheelView
+                    android:id="@+id/year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.core.lib.ui.wheel.WheelView
+                    android:id="@+id/month"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.core.lib.ui.wheel.WheelView
+                    android:id="@+id/day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/DialogTimePicker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lib_color_white"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <com.core.lib.ui.wheel.WheelView
+                    android:id="@+id/hour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.core.lib.ui.wheel.WheelView
+                    android:id="@+id/minute"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/DialogSimpleSelectPicker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lib_color_white"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <com.core.lib.ui.wheel.WheelView
+                    android:id="@+id/simpleSelectPicker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerlayout_optimize_wheel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_outer_corner_white"
+                android:gravity="center"
+                android:visibility="gone">
+                <include layout="@layout/activity_healthlog_optimized_wheel" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linerlayout_biserial_wheel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lib_color_white"
+                android:gravity="center"
+                android:visibility="gone">
+                <include layout="@layout/activity_healthlog_biserial_wheel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/DialogDoubleSelectPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <com.core.lib.ui.wheel.WheelView
+                    android:id="@+id/leftSelectPicker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.core.lib.ui.wheel.WheelView
+                    android:id="@+id/rightSelectPicker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/DialogProgressLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/DialogProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/DialogProgressBarTextView"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progress_upgrade_bg" />
+                <TextView
+                    android:id="@+id/DialogProgressBarTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="0%"
+                    android:textColor="@color/lib_color_textview_black"
+                    android:textSize="@dimen/lib_text_small" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/DialogButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lib_color_listview_divider"
+                android:scaleType="fitXY"></ImageView>
+
+            <LinearLayout
+                android:id="@+id/linerlayout_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/DialogButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_cancel_ok_selector"
+                    android:text="test"
+                    android:textColor="@color/lib_color_textview_black"
+                    android:textSize="@dimen/lib_text_medium"
+                    android:visibility="gone"></Button>
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lib_color_listview_divider" />
+
+                <Button
+                    android:id="@+id/DialogButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_cancel_ok_selector"
+                    android:text="test"
+                    android:textColor="@color/lib_color_textview_black"
+                    android:textSize="@dimen/lib_text_medium"
+                    ></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

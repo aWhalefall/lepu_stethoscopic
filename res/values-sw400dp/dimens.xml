@@ -1,0 +1,6 @@
+<resources>
+    <!--rate=1.25-->
+    <dimen name="group2width">247.5dp</dimen>
+    <dimen name="font250">312.5dp</dimen>
+    <dimen name="heartsize">212.5dp</dimen>
+</resources>

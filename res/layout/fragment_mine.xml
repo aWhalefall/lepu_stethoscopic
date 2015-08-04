@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_ctn"
+    android:background="@color/bg_color"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.lepu.stethoscopic.widget.CommonTopBar
+            android:id="@+id/commonbatr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/app_icon"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/app_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/app_icon"
+            android:id="@+id/relative_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@drawable/itemselector"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp">
+
+
+            <ImageView
+                style="@style/setting_image_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/person_info_icon" />
+
+            <TextView
+                style="@style/settings_button_style"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/itemselector"
+                android:duplicateParentState="true"
+                android:text="@string/personinfo" />
+
+            <ImageButton
+                style="@style/settings_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_eeee"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:background="@drawable/bg_input"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:textColor="@color/blue"
+            android:layout_marginTop="60dp"
+            android:textSize="@dimen/medium_text_size"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:text="@string/exit_account"
+            android:id="@+id/txt_exit" />
+    </RelativeLayout>
+</FrameLayout>

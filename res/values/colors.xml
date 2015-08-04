@@ -1,0 +1,130 @@
+<resources>
+    <color name="all_white_background">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="topbar">#FFFFFF</color>
+    <color name="bg_title">#00d1cb</color>
+    <color name="divider_color">#a0a0a0</color>
+    <color name="bg_btn_send_identify_code">#a0a0a0</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="colorbf">#bfbfbf</color>
+    <color name="fontcolora0">#a0a0a0</color>
+    <!--<color name="theme">#02c7c5</color>-->
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="dominanttone">#02c7c5</color>
+    <color name="transport">#01000000</color>
+    <color name="gray_f2f2f2">#f2f2f2</color>
+    <color name="fontcolor95">#959595</color>
+    <color name="gray_d4d4d4">#d4d4d4</color>
+    <color name="red">#FF0000</color>
+    <color name="yellowfe">#feac1f</color>
+    <color name="orange">#f39800</color>
+    <color name="font89">#898989</color>
+    <color name="fontf5">#F5F5F5</color>
+    <color name="login_gray_background">#eaeaea</color>
+    <color name="fonge7">#e7e7e7</color>
+    <color name="font707070">#707070</color>
+    <color name="fonta0a0a0">#a0a0a0</color>
+    <color name="footed">#00A6ED</color>
+    <color name="gray_text_hint">#b4b4b4</color>
+    <color name="colord2">#D2D2D2</color>
+    <color name="circle1">#58BAFB</color>
+    <color name="circle2">#05D3EB</color>
+    <color name="circle3">#15DAC9</color>
+    <color name="circle4">#A9DB4D</color>
+    <color name="circle5">#02C9C2</color>
+    <color name="circle6">#6B94F0</color>
+    <color name="circlebg">#DCDCDC</color>
+    <dimen name="com_facebook_picker_place_image_size">64dp</dimen>
+    <color name="com_facebook_picker_search_bar_background">#f5f5f7</color>
+    <color name="com_facebook_picker_search_bar_text">#bcbdc2</color>
+
+    <color name="rotation_dialog_background">#0B213E</color>
+
+    <color name="alpha">#C0000000</color>
+    <color name="popmenu">#02c7c5</color>
+    <color name="ok">#6B94F0</color>
+
+    <color name="title_layout">#4FC1E9</color>
+    <color name="title_layout_doctor">#00d1cb</color>
+
+    <color name="txt_hint">#bfbfbf</color>
+    <color name="txt_normal">#434343</color>
+
+    <color name="txt_patient">#4FC1E9</color>
+    <color name="patient_update_bg">#4FC1E9</color>
+    <color name="blue">#20B04F</color>
+
+
+    <color name="bg_color">#F8F8F8</color>
+    <color name="bg_f3f3f3">#f3f3f3</color>
+    <color name="txt_gray">#a0a0a0</color>
+    <color name="txt_doctor">#009f96</color>
+    <color name="off_line">#bfbfbf</color>
+    <color name="bg_title_patient">#32b16c</color>
+    <color name="notice">#CCCCCC</color>
+
+    <color name="edit_bg_color">#c5c5c5</color>
+    <color name="light_blue">#00d0cb</color>
+    <color name="chat_session_color">#434343</color>
+
+    <color name="list_right_tip">#a0a0a0</color>
+    <color name="fontbfbfbf">#bfbfbf</color>
+    <color name="font434343">#434343</color>
+    <color name="bga0">#a0a0a0</color>
+    <color name="bg_eeee">#EEEEEE</color>
+    <color name="color96">#969696</color>
+
+    <color name="color_transparent">#00000000</color>
+    <color name="color_half_transparent">#aa000000</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <!-- ========================================================================= -->
+    <color name="color_text_black">#444444</color>
+    <color name="color_text_black2">#676767</color>
+    <color name="color_text_gray">#cecece</color>
+
+    <color name="color_background">#FFFFFF</color>
+    <color name="color_topbar_back_bg_selected">#00000000</color>
+    <color name="color_topbar_back_title">#676767</color>
+    <color name="color_topbar_back_title_selected">#cecece</color>
+
+    <color name="color_topbar_bg">#f7f7f7</color>
+    <color name="color_topbar_title">#444444</color>
+
+    <color name="color_menubar_bg">#cecece</color>
+
+    <color name="color_listitem_default">#00000000</color>
+    <color name="color_listitem_selected">#00B4EA</color>
+    <color name="color_listview_divider">#d9d9d9</color>
+
+    <color name="color_listview_refresh_1">#68696a</color>
+    <color name="color_listview_refresh_2">#FFFFFF</color>
+    <color name="color_listview_refresh_3">#00B4EA</color>
+    <color name="color_listview_refresh_4">#FFFFFF</color>
+
+    <color name="color_viewpager_tab">#68696a</color>
+
+    <color name="color_main_top_text_default">#545454</color>
+    <color name="color_main_top_text_selected">#00B4EA</color>
+
+    <color name="color_font_typeface">#7e7e7e</color>
+    <color name="typeface">#7e7e7e</color>
+    <color name="app_color">#3cb9b5</color>
+    <!-- -->
+
+    <color name="color_main_menu_item_default">#FFFFFF</color>
+    <color name="color_main_menu_item_selected">#00B4EA</color>
+    <color name="fontcolor67">#676767</color>
+    <color name="fontcolor44">#444444</color>
+    <color name="bg_color_f4">#f4f4f4</color>
+
+    <color name="blood_low">#ffc169</color>
+    <color name="blood_normal">#a4d898</color>
+    <color name="blood_high">#ff7a8a</color>
+    <color name="division_line">#d6d6d6</color>
+</resources>

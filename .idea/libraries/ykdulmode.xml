@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ykdulmode">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib_core/libs/ykdulmode.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
