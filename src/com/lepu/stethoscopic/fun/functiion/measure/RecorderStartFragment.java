@@ -22,6 +22,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.core.lib.application.BaseFragment;
 import com.core.lib.core.AsyncRequest;
@@ -69,6 +70,7 @@ public class RecorderStartFragment extends BaseFragment implements CommonTopBar.
     
     private AudioManager mAudioManager = null;
     private int mCurrentStreamVolume = 0;
+    private  TextView timeCountDown;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -77,7 +79,6 @@ public class RecorderStartFragment extends BaseFragment implements CommonTopBar.
             soundType = getArguments().getInt("type");
         }
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View mainView = inflater.inflate(R.layout.fragment_record, null, false);
@@ -111,6 +112,7 @@ public class RecorderStartFragment extends BaseFragment implements CommonTopBar.
         ic_right = (ImageView) mainView.findViewById(R.id.ic_right);
         ic_right.setImageResource(R.drawable.ic_upload_lock);
         ic_right.setOnClickListener(listener);
+         timeCountDown= (TextView) mainView.findViewById(R.id.tips_coutdown);
         setupCountDownTimer();
         startRecord();
         return mainView;
@@ -211,7 +213,6 @@ public class RecorderStartFragment extends BaseFragment implements CommonTopBar.
             if (dialog != null)
                 dialog.dismiss();
         }
-
         @Override
         public void RequestError(Object object, int errorId, String errorMessage) {
             dialog.dismiss();
@@ -267,10 +268,12 @@ public class RecorderStartFragment extends BaseFragment implements CommonTopBar.
      */
     private void showState(int type) {
         waveview.setVisibility(View.GONE);
+        timeCountDown.setVisibility(View.GONE);
         ic_left.setFocusable(true);
         ic_right.setFocusable(true);
         switch (type) {
             case 1: //录音状态
+                timeCountDown.setVisibility(View.VISIBLE);
                 ic_left.setFocusable(false);
                 ic_right.setFocusable(false);
                 ic_left.setImageResource(R.drawable.ic_play_lock);
@@ -280,6 +283,7 @@ public class RecorderStartFragment extends BaseFragment implements CommonTopBar.
                 imgviewTypeicon.setImageResource(R.drawable.huatong);
                 break;
             case 2: //播放状态
+                timeCountDown.setVisibility(View.GONE);
                 ic_left.setImageResource(R.drawable.ic_pause);
                 ic_middle.setImageResource(R.drawable.ic_start);
                 ic_right.setImageResource(R.drawable.ic_upload);
@@ -288,6 +292,7 @@ public class RecorderStartFragment extends BaseFragment implements CommonTopBar.
                 break;
             case 3: //停止状态
                 stopPlayAndRecord();
+                timeCountDown.setVisibility(View.GONE);
                 ic_left.setImageResource(R.drawable.ic_play);
                 ic_middle.setImageResource(R.drawable.ic_start);
                 ic_right.setImageResource(R.drawable.ic_upload);
@@ -329,7 +334,6 @@ public class RecorderStartFragment extends BaseFragment implements CommonTopBar.
         clsOscilloscope.Start(getActivity(), audioRecord, recBufSize, null, null, fileName);
         showState(1);
     }
-
     //播放音频
     private void play(String path) {
         try {
@@ -364,16 +368,14 @@ public class RecorderStartFragment extends BaseFragment implements CommonTopBar.
     private void setupCountDownTimer() {
         countDownTimer = new CountDownTimer(60000, 1000) {
             public void onTick(long millisUntilFinished) {
-
+                timeCountDown.setText(""+DateUtil.getData2strmmss(60*1000-millisUntilFinished));
             }
-
             public void onFinish() {
                 showState(3);
             }
         };
         countDownTimer.start();
     }
-
     public StateChange stateChange = new StateChange() {
         @Override
         public void onChange() {

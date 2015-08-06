@@ -124,7 +124,6 @@ public class AudioManager {
 
     /**
      * 解析
-     *
      * @param soundFiles
      */
     private void cursorParse(ArrayList<SoundFile> soundFiles, Cursor cursor) {

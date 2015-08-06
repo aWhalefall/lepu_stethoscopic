@@ -13,6 +13,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.core.lib.application.BaseFragment;
 import com.core.lib.core.AsyncRequest;
@@ -52,6 +53,7 @@ public class RecorderStartFragmentAmr extends BaseFragment implements CommonTopB
     private WaveView waveview;
     private String fullName;
     private String filename;
+    private TextView timeCountDown;
     //    // 设置音频采样率，44100是目前的标准，但是某些设备仍然支持22050，16000，11025
 //    static final int frequency = 44100;
 //    // 设置双声道
@@ -98,6 +100,8 @@ public class RecorderStartFragmentAmr extends BaseFragment implements CommonTopB
         ic_right = (ImageView) mainView.findViewById(R.id.ic_right);
         ic_right.setImageResource(R.drawable.ic_upload_lock);
         ic_right.setOnClickListener(listener);
+        timeCountDown= (TextView) mainView.findViewById(R.id.tips_coutdown);
+
         setupCountDownTimer();
         startRecord();
         return mainView;
@@ -126,7 +130,7 @@ public class RecorderStartFragmentAmr extends BaseFragment implements CommonTopB
                             updateDb();  ///写数据库
                         }
                     } catch (Exception e) {
-                        LogUtilBase.LogE("error", e.getMessage());
+                       // LogUtilBase.LogE("error", e.getMessage());
                     }
                     break;
                 case R.id.ic_left:
@@ -202,7 +206,6 @@ public class RecorderStartFragmentAmr extends BaseFragment implements CommonTopB
                     UIHelper.showToast(AppManager.getAppManager().currentActivity(), R.string.connectfail);
                 }
             });
-
         }
     };
 
@@ -243,6 +246,7 @@ public class RecorderStartFragmentAmr extends BaseFragment implements CommonTopB
         ic_right.setFocusable(true);
         switch (type) {
             case 1: //录音状态
+                timeCountDown.setVisibility(View.VISIBLE);
                 ic_left.setFocusable(false);
                 ic_right.setFocusable(false);
                 ic_left.setImageResource(R.drawable.ic_play_lock);
@@ -252,6 +256,7 @@ public class RecorderStartFragmentAmr extends BaseFragment implements CommonTopB
                 imgviewTypeicon.setImageResource(R.drawable.huatong);
                 break;
             case 2: //播放状态
+                timeCountDown.setVisibility(View.GONE);
                 ic_left.setImageResource(R.drawable.ic_pause);
                 ic_middle.setImageResource(R.drawable.ic_start);
                 ic_right.setImageResource(R.drawable.ic_upload);
@@ -260,6 +265,7 @@ public class RecorderStartFragmentAmr extends BaseFragment implements CommonTopB
                 break;
             case 3: //停止状态
                 stopPlayAndRecord();
+                timeCountDown.setVisibility(View.GONE);
                 ic_left.setImageResource(R.drawable.ic_play);
                 ic_middle.setImageResource(R.drawable.ic_start);
                 ic_right.setImageResource(R.drawable.ic_upload);
@@ -311,10 +317,10 @@ public class RecorderStartFragmentAmr extends BaseFragment implements CommonTopB
         if (countDownTimer != null) {
             countDownTimer.cancel();
         }
-        if (mRecorder != null && mPlayer.isPlaying()) {
+        if (mPlayer !=null && mRecorder != null && mPlayer.isPlaying()) {
             mPlayer.stop();
         }
-
+        setupCountDownTimer();
         mRecorder = new MediaRecorder();
         mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         mRecorder.setOutputFormat(MediaRecorder.OutputFormat.AMR_NB);
@@ -368,7 +374,7 @@ public class RecorderStartFragmentAmr extends BaseFragment implements CommonTopB
     private void setupCountDownTimer() {
         countDownTimer = new CountDownTimer(60000, 1000) {
             public void onTick(long millisUntilFinished) {
-
+                timeCountDown.setText(""+DateUtil.getData2strmmss(60*1000-millisUntilFinished));
             }
 
             public void onFinish() {

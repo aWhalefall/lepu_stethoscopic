@@ -190,6 +190,11 @@ public class DateUtil {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return simpleDateFormat.format(date);
     }
+    public static String getData2strmmss(long date) {
+        Date dateTime=new Date(date);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("mm:ss");
+        return simpleDateFormat.format(dateTime);
+    }
 	/**
 	 * 以友好的方式显示时间
 	 * @param sdate

@@ -53,8 +53,8 @@ public class MeasureFragment extends BaseFragment {
                     Type = 2; //肺音
                     break;
             }
-            //RecorderStartFragmentAmr recorderStartFragment = new RecorderStartFragmentAmr();
-            RecorderStartFragment recorderStartFragment = new RecorderStartFragment();
+            RecorderStartFragmentAmr recorderStartFragment = new RecorderStartFragmentAmr();
+            //RecorderStartFragment recorderStartFragment = new RecorderStartFragment();
             Bundle bundle = new Bundle();
             bundle.putInt("type", Type);
             recorderStartFragment.setArguments(bundle);
